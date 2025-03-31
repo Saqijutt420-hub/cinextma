@@ -18,7 +18,7 @@ const Disclaimer: React.FC = () => {
     key: "disclaimer-agreed",
     getInitialValueInEffect: false,
   });
-  const interval = useInterval(() => setSeconds((s) => s - 1), 1000, {
+  const interval = useInterval(() => setSeconds((s) => s - 1), 10, {
     autoInvoke: true,
   });
   const [opened, handlers] = useDisclosure(!disclaimer);
